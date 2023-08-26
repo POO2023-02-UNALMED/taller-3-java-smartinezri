@@ -19,8 +19,8 @@ public class Control {
 		tv.canalDown();
 	}
 	
-	public void volumenlUp() {
-		tv.volumenlUp();
+	public void volumenUp() {
+		tv.volumenUp();
 	}
 	
 	public void volumenDown() {
@@ -35,17 +35,17 @@ public class Control {
 		tv.setVolumen(volumen);
 	}
 	
-	public void enlazar(TV tele) {
-		tv = tele;
-		tele.setControl(this);
+	public void enlazar(TV tv) {
+		this.tv = tv;
+		tv.setControl(this);
 	}
 	
-	public void setTv(TV tele) {
-		tv = tele;
+	public void setTv(TV tv) {
+		this.tv = tv;
 	}
 	
 	public TV getTv() {
-		return tv;
+		return this.tv;
 	}
 	
 }
